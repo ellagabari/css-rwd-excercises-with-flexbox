@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+
+
+body{
+    background-color: aliceblue;
+    margin:0; /*to remove the default margin of the body element*/
+}
+
+a{
+    /*so that the link will inherit the text decoration and color of its parent element*/
+    text-decoration: inherit;
+    color: inherit;
+}
+
+
+/*moble-version*/
+nav{
+
+   
+    /*nav-decoration*/
+    background-color: #34495F;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    gap: 20px;
+
+    /*text decoration*/
+    color:white;
+    font-family: "Quicksand", sans-serif;
+    text-decoration: underline #FB197C;
+    text-underline-offset:5px;
+}
+
+/*tablet version*/   
+@media (min-width:768px) {
+    nav{
+
+        /*nav-decoration*/
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border:solid 2px #EAEBEA;
+        max-width: 80%;
+        margin: 0 auto;
+        margin-top: 20px;
+        background-color: aliceblue;
+        border-radius: 10px;
+        justify-content: space-evenly;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* soft shadow */
+        
+
+        /*text decoration*/
+        color:#546578;
+        font-size: 18px;
+        font-weight: 400;
+        
+    }
+}
+/*desktop version*/
+@media (min-width:1024px) {
+    nav{
+
+       justify-content: flex-end;
+        
+    }
+}
