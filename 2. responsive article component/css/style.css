@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quicksand:wght@300..700&display=swap');
 
-/*moble version*/
+/*mobile version*/
 body{
     margin: 10px;
 
@@ -60,14 +60,13 @@ a{
 }
 .card-btn{
     background-color: #4DC5C9;
-    padding:10px;
+    padding: 10px 20px 10px 20px;
     max-width:500px;
     text-align: center;
     font-size: 20px;
-    padding: 10px 20px 10px 20px;
     
 }
-.fifthteen{
+.fifteen{
     font-size: 25px;
 }
 
@@ -78,23 +77,25 @@ a{
         display: flex;
         flex-direction: row;
         padding-bottom: 0;
+        justify-content: space-between ;
     }
    
 
    .card-img{
-    
-        width: 300px;
+         
+        width:50%;
+        margin: 0;
+        flex-grow: 1;
     }
 
     .card-content{
         display: flex;
         flex-direction: column;
+
         padding-bottom: 0;
     }
   
     .card-footer{
-        justify-content:space-between ;
-    
         width:90%;
     
     }
