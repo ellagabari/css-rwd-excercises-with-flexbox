@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+
+a{
+    text-decoration: none;
+    color:inherit;
+}
+.panel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;
+    color: #016FF9;
+    
+  
+}
+.pricing-plan{
+    display: flex;
+    flex-direction: column;
+    padding-bottom:2rem;
+    border-bottom:solid 2px #E1F0FF;
+}
+
+.pricing-header{
+    font-size: 2rem; 
+    padding:1em 0 2em 0;
+    color: #888888;
+    font-weight: 800;
+    
+}
+.pricing-features-item{
+    border-top: solid 1px #E1F0FF;
+    line-height: 3em;
+    font-weight: 600;
+}
+.pricing-features-item:last-child{
+    border-bottom: solid 1px #E1F0FF;
+}
+.pricing-price {
+    padding:2.5rem;
+}
+
+.pricing-button{
+   
+    border: solid 2.5px #9DD1FF;
+    margin:0 auto;
+    padding: 1em 2em;
+    border-radius: 1em;
+    color:#348EFE; 
+    transition: all 0.3s ease;
+}
+
+.pricing-button:hover, .pricing-button:focus, .pricing-button:active{
+    background-color: #48AAFF;
+    color: white;
+    cursor: pointer;
+   
+}
+@media (min-width:1024px) {
+  .panel {
+     display: flex;
+     flex-direction: row;
+        justify-content: center; 
+        width: 100%;
+  }
+
+  .pricing-plan {
+     flex-grow: 1;
+     flex-shrink: 1;
+     padding-top: 2rem;
+  }
+  .pricing-plan img {
+     max-width: 100%; 
+     height: auto;     
+     display: block;   
+     margin: 0 auto;   
+  }
+.pricing-plan:not(:last-child) {
+    border-right:solid 2px #E1F0FF;
+  }
+}
